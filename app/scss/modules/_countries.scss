@@ -1,0 +1,40 @@
+.countries__container {
+    @include container();
+    @include clearfix;
+}
+
+.countries__item {
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.countries__flag {
+    position: absolute;
+    top: 5px;
+    left: -0;
+    z-index: 10;
+}
+
+.countries__readmore {
+    font-family: $OpenSans;
+    @include font-size(14px);
+    color: $blue-darker;
+    text-decoration: underline;
+}
+
+.countries__item_shengen {
+    @include gallery(2 of 12);
+}
+
+.countries__item_other {
+    @include gallery(2.4 of 12);
+}
+
+.countries__item_asia {
+    @include gallery(3 of 12);
+}
+
+.countries__item_poland {
+    @include gallery(6 of 12);
+}

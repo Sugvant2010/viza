@@ -1,0 +1,47 @@
+.button {
+    display: inline-block;
+    padding: 14px 35px 16px;
+    color: $white;
+    border: none;
+    text-align: center;
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+    font-family: $Designosaur;
+}
+
+.button_blue {
+    background: $blue;
+    &:hover {
+        background: $deep-dark-blue;
+        transition: 1s;
+    }
+}
+
+.button_blue-darker {
+    background: $blue;
+    &:hover {
+        background: $deep-dark-blue;
+        transition: 1s;
+    }
+}
+
+.button_dark-blue {
+    background: $dark-blue;
+    &:hover {
+        background: $deep-dark-blue;
+        transition: 1s;
+    }
+}
+
+.button_danger {
+    background: $red;
+    &:hover {
+        background: $dark-red;
+        transition: 1s;
+    }
+}
+
+.button__visa {
+    width: 100%;
+    padding: 13px 0 14px;
+    margin-top: 15px;
+}

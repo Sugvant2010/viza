@@ -1,0 +1,186 @@
+// imports
+@import '../utils/index';
+@import '../variables';
+
+.container {
+    @include container(1170px);
+    position: relative;
+}
+
+.block {
+    clear: both;
+}
+
+.block_padding {
+    padding: 40px 0 60px;
+}
+
+.block_padding-60 {
+    padding: 60px;
+}
+
+.block_padding-45-55 {
+    padding: 45px 55px;
+}
+
+.block__title {
+    @include full;
+    @include respond-to('large') {
+        padding: 0 30px !important;
+    }
+}
+
+.block__description {
+    @include font-size(18px);
+    @include full;
+}
+
+.block_white {
+    background-color: $white;
+}
+
+.block_gray-f2 {
+    background-color: $gray-f2;
+}
+
+.block_gray-f6 {
+    background-color: $gray-f6;
+}
+
+.block_blue {
+    background: url('../images/background-blue.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.block__footer_blue {
+    background: $footer-blue;
+}
+
+.block__footer_dark-blue {
+    background: $footer-dark-blue;
+}
+
+.block_shadow {
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+}
+
+.flex {
+    display: flex;
+}
+
+.full {
+    @include full();
+}
+
+.gallery-6 {
+    @include gallery(6 of 12);
+}
+
+.gallery-5 {
+    @include gallery(5 of 12);
+}
+
+.gallery-4 {
+    @include gallery(4 of 12);
+}
+
+.gallery-3 {
+    @include gallery(3 of 12);
+}
+
+.gallery-2 {
+    @include gallery(2 of 12);
+}
+
+.span4 {
+    @include span(4);
+}
+
+.span6 {
+    @include span(6);
+}
+
+.span8 {
+    @include span(8);
+}
+
+.map, .full {
+    width: 100%;
+    height: 100%
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_left {
+    float:left; 
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.image_right  {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.nopadding {
+  padding: 0;
+  @include gutter(100);
+}
+
+.nomargin {
+  margin: 0;
+  margin-before: 0;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.margin_top30 {
+    margin-top: 30px;
+}
+
+.margin_top35 {
+    margin-top: 35px;
+}
+
+.padding_top55 {
+    padding-top: 55px;
+}
+
+.padding_bottom35 {
+    padding-bottom: 35px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin_bottom25 {
+  margin-bottom: 25px;
+}
+
+.margin_bottom35 {
+    margin-bottom: 35px;
+}
+
+.margin_bottom30 {
+    margin-bottom: 30px;
+}
+
+.margin_bottom40 {
+    margin-bottom: 40px;
+}
+
+.margin_bottom60 {
+    margin-bottom: 60px;
+}

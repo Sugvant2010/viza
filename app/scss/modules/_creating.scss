@@ -1,0 +1,134 @@
+.creating__container {
+    @include clearfix;
+    width: 100%;
+    clear: both
+}
+
+.creating__item {
+    position: relative;
+    @include clearfix;
+    @include respond-to('small') {
+        &:last-child:before {
+            height: calc(100% - 115px);
+        }
+    }
+}
+
+.creating__item:before {
+    content: ' ';
+    width: 1px;
+    height: calc(100% - 94px);
+    position: absolute;
+    top: 95px;
+    left: 44px;
+    border: 2px solid #255c96;
+    @include respond-to('small') {
+        left: calc(50% - 2px);
+        
+    }
+
+}
+
+.creating__item:last-child:before {
+    display: none;
+    @include respond-to('small') {
+        display: block;
+    }
+}
+
+.creating__step {
+    position: relative;
+    background: url('../images/number.png') no-repeat;
+    width: 92px;
+    height: 96px;
+    float:left;
+    display: block;
+    z-index: 2;
+    @include respond-to('small') {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+.creating__step:before {
+    content: ' ';
+    width: 13px;
+    height: 1px;
+    position: absolute;
+    top: 45px;
+    border: 2px solid $dark-blue;
+    right: 0;
+    @include respond-to('small') {
+        display: none;
+    }
+}
+
+.creating__number {
+    @include font-size(30px);
+    color: $white;
+    display: block;
+    line-height: 96px;
+    text-align: center;
+    margin: 0;
+}
+
+.creating__info {
+    width: calc(100% - 92px);
+    float: left;
+    @include respond-to('small') {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.creating__wrapper {
+    text-align: center;
+    background: #fff;
+    padding: 35px 0 36px;
+    margin-bottom: 10px;
+    @include respond-to('small') {
+        margin-bottom: 20px;
+    }
+}
+
+.creating__title {
+    margin: 0;
+}
+
+.creating__addition {
+    @include font-size(18px);
+    padding: 0 60px;
+}
+
+.creating__description {
+    font-family: $OpenSansItalic;
+    @include font-size(16px);
+}
+
+.creating__button {
+    margin: 15px 0 30px;
+    @include font-size(18px);
+    width: 340px;
+}
+
+.creating__step_small {
+    position: relative;
+    background: url(../images/background-small.png) no-repeat;
+    width: 44px;
+    height: 57px;
+    float: left;
+    display: block;
+    z-index: 2;
+    margin-right: 15px;
+    background-position-y: 0;
+}
+
+.creating__number_small {
+    @include font-size(16px);
+    color: #ffffff;
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+}

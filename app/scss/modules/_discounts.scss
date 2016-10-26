@@ -1,0 +1,34 @@
+.discounts__container {
+    display: flex;
+    clear: both;
+    background: $white;
+    @include respond-to('small') {
+        flex-direction: column;
+    }
+}
+
+.discounts__image {
+    float: left;
+}
+
+.discounts__wrapper {
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 70px;
+    @include font-size(18px);
+    p {
+        padding: 8px 0;
+    }
+    
+}
+
+.discounts__button {
+    margin: 15px 0;
+    @include font-size(18px);
+    width: 340px;
+    @include respond-to('small') {
+        width: 100%;
+    }
+}

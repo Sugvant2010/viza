@@ -1,0 +1,9 @@
+.info {
+    p {
+        @include font-size(18px);
+    }
+    b {
+        font-family: $Designosaur;
+        @include font-size(21px);
+    }
+}

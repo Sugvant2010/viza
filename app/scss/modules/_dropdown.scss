@@ -1,0 +1,47 @@
+.dropdown__container {
+    position: relative;
+    width: calc(100% - 67px);
+}
+
+.dropdown__title {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed;
+
+    &:before {
+        content: "\f196";
+        display: inline-block;
+        margin-right: 15px;
+        font: normal normal normal 14px/1 FontAwesome;
+        @include font-size(14px);
+    }
+
+    &.opened:before {
+        content: "\f147";
+    }
+}
+
+.dropdown__title_small {
+    margin-top: 9px;
+    margin-bottom: 22px;
+}
+
+.dropdown__wrapper {
+    display: none;
+    &.opened {
+        display: block;
+    }
+}
+
+.dropdown__text {
+    @include font-size(16px);
+}
+
+.dropdown__link {
+    font-family: $OpenSans;
+    @include font-size(16px);
+    color: $blue-darker;
+    text-decoration: underline;
+}

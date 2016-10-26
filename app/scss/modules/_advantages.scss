@@ -1,0 +1,36 @@
+.advantages_padding {
+    padding: 30px 0 40px;
+}
+
+.advantages__wrapper {
+    @include container();
+}
+
+.advantages__item {
+    @include span(6 of 12);
+    color: $white;
+    display: flex;
+    align-items: center;
+    font-family: 'OpenSans';
+    @include font-size(18px);
+    margin-bottom: 20px;
+    @include respond-to('small') {
+        @include full;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.advantages__check {
+    font-size: 35px;
+    color: $blue;
+    margin-right: 30px;
+}
+
+.reasons__title {
+    color: $black;
+}
+
+.reasons__item {
+    color: $black;
+}

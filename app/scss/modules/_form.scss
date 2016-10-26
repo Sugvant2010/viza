@@ -1,0 +1,30 @@
+.form__container {
+    @include span(8);
+    float: none;
+    margin: 0 auto;
+}
+
+.form__wrapper {
+    @include full;
+    padding: 60px 160px;
+    background: $white;
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    font-family: $OpenSansItalic;
+    @include font-size(16px);
+    border-radius: 6px;
+    line-height: 16px;
+    padding: 10px 28px 11px;
+    margin-bottom: 16px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+}
+
+.form__button {
+    margin-top: 4px;
+    @include font-size(16px);
+}

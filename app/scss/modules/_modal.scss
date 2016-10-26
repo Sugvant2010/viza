@@ -1,0 +1,202 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: overlay;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    &.opened {
+        display:block;
+    }
+}
+
+.modal__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: $white;
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 49;
+    display: none;
+    background: rgba(3,3,3, 0.6);
+    &.opened {
+        display:block;
+    }
+}
+
+.modal__desc {
+    @include font-size(16px);
+}
+
+.modal_thanks {
+    height: 300px;
+}
+
+.modal_complaints {
+    height: 635px;
+}
+
+.modal_conditions, .modal_call {
+    height: 360px;
+}   
+
+.modal__form_wrapper {
+    width: 100%;
+    padding: 60px;
+    background: $white;
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 100%;
+
+    margin: 0 auto;
+}
+
+.modal__images {
+    width: 100%;
+    padding: 0 100px;
+    .empty {
+        display: block;
+        background-color: #e6e6e6;
+    }
+    .grid {
+        display: none;
+        .controls {
+            margin-top: 35px;
+            a {
+                margin-bottom: 10px;
+            }
+            a:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .controls {
+        padding: 0 200px;
+        a {
+            width: 100%;
+        }
+    }
+}
+
+.modal__confidence {
+    color: #1c9cd6;
+    i {
+        margin-right: 12px;
+        font-size: 28px;
+    }
+}
+
+.modal__visa {
+    .modal__form_wrapper {
+        .form_block {
+            padding-bottom: 35px;
+            width: 100%;
+            border-left: solid 2px #aeaeae;
+            .row {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    .block_title {
+                        color: #aeaeae;
+                    }
+                    .label {
+                        font-family: 'Open Sans';
+                        font-weight: 100;
+                        margin-top: 22px;
+                        margin-bottom: 6px;
+                    }
+                    input, select {
+                        width: 100%;
+                        height: 45px;
+                        margin-bottom: 0;
+                    }
+                    .inline {
+                        width: initial;
+                        margin-right: 26px;
+                    }
+                    .button_next {
+                        width: 161px;
+                    }
+                    .button_radio {
+                        width: 49%;
+                        height: 45px;
+                    }
+                }
+                .col.f30 {
+                    flex: 0 0 30%;
+                }
+                .col.f49 {
+                    flex: 0 0 49%;
+                }
+                .col.f100 {
+                    flex: 0 0 101%;
+                }
+                .f49_add80 {
+                    flex: 0 0 calc(49% + 80px);
+                }                
+                .col.pl45 {
+                    padding-left: 45px;
+                }
+                .col.pr45 {
+                    padding-right: 45px;
+                }
+                .col.pl35 {
+                    padding-left: 35px;
+                }
+                .col.pr35 {
+                    padding-right: 35px;
+                }
+                .col.ml31 {
+                    margin-left: 31px;
+                }
+                .col.mr31 {
+                    margin-right: 31px;
+                }
+                .col.ml10 {
+                    margin-left: 10px;
+                }
+                a.mt10 {
+                    margin-top: 10px;
+                }
+                a.mt25 {
+                    margin-top: 25px;
+                }
+            }
+        }
+        .form_block.current {            
+            border-left: solid 2px #285e97;
+            .row {
+                .col {
+                    .block_title {
+                        color: #6d9bcd;
+                    }
+                }
+            }
+        }
+    }
+}

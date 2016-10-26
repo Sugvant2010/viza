@@ -1,0 +1,117 @@
+// imports
+@import '../utils/fontUtils';
+@import '../variables';
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;  
+  -moz-margin-before: 0;
+  -webkit-margin-before: 0;
+  -khtmlmargin-before: 0;
+  -o-margin-before: 0;
+  margin-before: 0;
+  -moz-margin-after: 0;
+  -webkit-margin-after: 0;
+  -khtmlmargin-after: 0;
+  -o-margin-after: 0;
+  margin-after: 0;    
+  -moz-margin-start: 0;
+  -webkit-margin-start: 0;
+  -khtmlmargin-start: 0;
+  -o-margin-start: 0;
+  margin-start: 0;
+  -moz-margin-end: 0;
+  -webkit-margin-end: 0;
+  -khtmlmargin-end: 0;
+  -o-margin-end: 0;
+  margin-end: 0;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  -khtml-padding-start: 0;
+  -o-padding-start: 0;
+  padding-start: 0;  
+  -moz-padding-end: 0;
+  -webkit-padding-end: 0;
+  -khtml-padding-end: 0;
+  -o-padding-end: 0;
+  padding-end: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    color: $blue;
+  }
+}
+input, select {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p, input, select {
+  font-family: $OpenSans;
+  margin-bottom: 5px;
+}
+
+b {
+  font-family: $OpenSansBold;
+  font-weight: 400;
+}
+
+button {
+  font-family: $Designosaur;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid $blue;
+}
+
+.link {
+    font-family: $OpenSans;
+    @include font-size(14px);
+    color: $blue-darker;
+    text-decoration: underline;
+}

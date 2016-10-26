@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+@@include('head.html')
+<body>
+@@include('header.html')
+@@include('menu.html')
+@@include('banner.html', {
+    "image": "images/banners/team.jpg",
+    "addition": false
+})
+@@include('secondMenu.html', { "block_color": "block_gray-f2"})
+@@include('about.html')
+@@include('team.html')
+
+@@include('forms/container.html', {
+    "title": "Хотите работать с нашей командой? Просто оставьте заявку и дождитесь звонка", 
+    "h1_classes": "text_center", 
+    "block_classes": "block_padding block_gray-f2", 
+    "button_label": "Перезвоните мне"
+})
+@@include('footer.html')
+</body>
+</html>

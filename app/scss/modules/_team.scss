@@ -1,0 +1,56 @@
+.team__container {
+    @include container();
+    @include clearfix;
+}
+
+.member__item {
+    position: relative;
+    margin: 45px 0;
+    text-align: center;
+    @include gallery(4 of 12);
+
+    .member__container {
+        display: inline-block;
+        position: relative;
+ 
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #ccc;
+            top: calc(50% - 1px);
+            left: -50%;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            z-index: 10;
+            left: -2px;
+            top: calc(50% - 4px);
+            border-radius: 8px;
+            background: #005b8e;
+        }
+    }
+
+    &:nth-child(1), &:nth-child(4) {
+        .member__container:after, .member__container:before {
+            display: none;
+        }
+    }
+}
+
+.member__image {
+    position: relative;
+    z-index: 2;
+}
+
+.member_desc {
+    @include font-size(16px);
+}
+

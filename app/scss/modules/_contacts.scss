@@ -1,0 +1,143 @@
+.contacts {
+    padding: 40px 0 80px;
+}
+
+.contacts__title {
+    padding: 0;
+}
+
+.contacts__container {
+    position: relative;
+    top: 80px;
+    height: 65px;
+}
+
+.contacts__container_small {
+    @include span(6 of 12);
+    top: 35px;
+    margin: 0 auto;
+    float:none;
+}
+
+.contacts__wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    background: $white;
+    box-shadow: -0.2px 3px 9.9px 1.1px rgba(0, 1, 3, 0.31);
+    padding: 65px 0;
+    @include full;
+}
+
+.contacts__block {
+    @include span(2 of 4);
+    padding-left: 65px; 
+    @include respond-to('small') {
+        @include full;
+        padding: 0 30px;
+    }
+}
+
+.contacts__block:first-child {
+    border-right: 1px solid #d0d0d0;
+    @include respond-to('small') {
+        border-right: none;
+    }
+}
+
+.contacts__item {
+    @include font-size(18px);
+    margin-bottom: 22px;
+    i {
+        margin-right: 15px;
+    }
+}
+
+.contacts__map {
+    width: 100%;
+    height: 500px;
+}
+
+.cicons__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cicons__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cicons__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+    width: 25%;
+}
+
+.cicons__image {
+    max-width: 132px;
+    position: relative;
+    z-index: 9;
+}
+
+.cicons__title {
+    margin-bottom: 15px;
+}
+
+.cicons__desc, .cicons__link {
+    margin-bottom: 10px;
+    @include font-size(16px);
+    font-family: $OpenSans;
+}
+
+.cicons__link {
+    color: $blue;
+    text-decoration: underline;
+}
+
+.cicons__wrapper {
+    display: inline-block;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        z-index: 11;
+        left: -2px;
+        top: calc(50% - 4px);
+        border-radius: 8px;
+        background: #005b8e;
+    }  
+}
+
+.cicons__line {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #ccc;
+        top: calc(50% - 1px);
+        left: -50%;
+    }
+}
+
+.cicons__item:first-child {
+    .cicons__line:after {
+        display: none;
+    }
+    .cicons__wrapper:before {
+        display: none;
+    }
+}

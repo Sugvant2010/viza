@@ -1,0 +1,17 @@
+.credit__container {
+    @include full;
+    display: flex;
+}
+
+.credit__form {
+    @include span(7 of 12);
+    @include gutter(100);
+}
+
+.credit__desc {
+    @include span(5 of 12);
+    @include gutter(3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

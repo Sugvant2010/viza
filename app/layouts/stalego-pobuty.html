@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+@@include('head.html')
+<body>
+@@include('header.html')
+@@include('menu.html')
+@@include('banner.html', {
+    "image": "images/banners/spobuty.jpg",
+    "addition": true
+})
+@@include('secondMenu.html', { "block_color": "block_white"})
+
+@@include('rights.html')
+@@include('ways.html')
+@@include('forms/container.html', {
+    "title": "Мы оказываем помощь в нестандартных ситуациях. Оставьте заявку, наш специалист свяжется с Вами", 
+    "h1_classes": "color_white text_center", 
+    "block_classes": "block_padding block_blue", 
+    "button_label": "Записаться на консультацию"
+})
+@@include('reasons.html')
+@@include('credit.html')
+
+@@include('footer.html')
+</body>
+</html>

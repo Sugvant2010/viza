@@ -1,0 +1,27 @@
+@import 'buttons';
+@import 'icons';
+@import 'header';
+@import 'menu';
+@import 'slider';
+@import 'secondMenu';
+@import 'footer';
+@import 'form';
+@import 'countries';
+@import 'banner';
+@import 'team';
+@import 'pagination';
+@import 'news';
+@import 'dropdown';
+@import 'info';
+@import 'modal';
+
+.nopadding {
+    padding: 0;
+}
+
+.title__flag {
+    left: inherit;
+    top: inherit;
+    margin-left: 10px;
+    position: absolute;
+}

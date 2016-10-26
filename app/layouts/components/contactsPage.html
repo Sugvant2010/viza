@@ -1,0 +1,124 @@
+<div class="block block_white block_padding">
+    <div class="container">
+        <div class="cicons__container">
+            <div class="cicons__row">
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/1.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Время работы</h2>
+                    <p class="cicons__desc">пн - пт: с 9:00 до 19:00</p>
+                    <p class="cicons__desc">сб: с 10:00 до 18:00</p>
+                </div>
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/2.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Телефон/Viber</h2>
+                    <p class="cicons__desc">+377 (33) 646-55-88 (mts)</p>
+                    <p class="cicons__desc">+377 (29) 646-55-99 (velcom)</p>
+                </div>
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/3.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">E-mail</h2>
+                    <p class="cicons__desc">info.visavisa@gmail.com</p>
+                    <p class="cicons__desc"></p>
+                </div>
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/4.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Skype</h2>
+                    <p class="cicons__desc">visavisa.by</p>
+                    <a href="#" class="cicons__link">Перейти</a>
+                </div>
+            </div>
+            <div class="cicons__row">
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/5.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Вконтакте</h2>
+                    <a href="#" class="cicons__link">Перейти</a>
+                </div>
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/6.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Одноклассники</h2>
+                    <a href="#" class="cicons__link">Перейти</a>
+                </div>
+                <div class="cicons__item">
+                    <div class="cicons__line">
+                        <div class="cicons__wrapper">
+                            <img src="images/contacts_icons/7.jpg" alt="" class="cicons__image">
+                        </div>
+                    </div>
+                    <h2 class="cicons__title">Facebook</h2>
+                    <a href="#" class="cicons__link">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block block_gray-f2">
+    <div class="container">
+        <div class="contacts__container contacts__container_small">
+            <div class="contacts__wrapper text_center">
+                <p class="des">г. Минск, ул. Гикало, дом 5, офис 103</p>
+            </div>
+        </div>
+        <div class="contacts__map margin_bottom40">
+            <div class="map" id="map1"></div>
+        </div>
+        <div class="contacts__map">
+            <div class="map" id="map2"></div>
+        </div>
+    </div>
+</div>
+<script>
+var map1, map2;
+function initMap() {
+   var  options = {
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: false,
+        center: {
+            lat: 53.682521,
+            lng: 23.832049
+        },
+        zoom: 17
+    };
+    
+    map1 = new google.maps.Map(document.getElementById('map1'), options);
+
+    map1.addListener('click', function() {
+        map1.set('draggable', true);
+    });
+
+    map2 = new google.maps.Map(document.getElementById('map2'), options);
+
+    map2.addListener('click', function() {
+        map2.set('draggable', true);
+    });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIQBBSwACxNNNbi9GSDGecNy_Pmbc4Gts&callback=initMap" async defer></script>
+

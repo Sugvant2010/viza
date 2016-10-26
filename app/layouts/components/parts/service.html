@@ -1,0 +1,17 @@
+<div class="service">
+    <div class="service__container">
+        <img src="@@img" alt="@@alt" class="service__image">
+            <div class="service__info">
+                <h2>@@title</h2>
+                <ul class="service__list">
+                    @@for (var i = 0; i < items.length; i++) {
+                    <li class="service__item">
+                        <a href="#" class="service__link">
+                            `+items[i]+`
+                        </a>
+                    </li>
+                    }
+                </ul>
+            </div>
+    </div>
+</div>
