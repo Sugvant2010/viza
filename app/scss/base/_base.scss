@@ -2,14 +2,19 @@
 @import '../utils/fontUtils';
 @import '../variables';
 
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
 html,
 body {
   height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 * {
