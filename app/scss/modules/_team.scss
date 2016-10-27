@@ -43,6 +43,13 @@
             display: none;
         }
     }
+
+    @include respond-to('small') {
+        @include gallery(6 of 12);
+        .member__container:after, .member__container:before {
+            display: none;
+        }
+    }
 }
 
 .member__image {

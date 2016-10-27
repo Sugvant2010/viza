@@ -25,12 +25,17 @@ jQuery( document ).ready(function( $ ) {
         $(this).toggleClass('opened');
         $(this).next().toggleClass('opened');
     });
+    // menu dropdown
+    $('.second-menu__toggle').click(function () {
+        $(this).toggleClass('opened');
+        $(this).next().toggleClass('opened');
+    })
     //modal action close
     $('.modal__overlay').click(function () {
         $(this).removeClass('opened');
         $('.modal').removeClass('opened');
     })
-    //modal action opene
+    //modal action open
 
     // conditions
     $('.button__conditions').click(function(e) {

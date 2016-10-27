@@ -1,6 +1,9 @@
 .block__second-menu {
     height: 60px;
     position: relative;
+    @include respond-to('small') {
+        height: 100%;
+    }
 }
 
 .second-menu__container {
@@ -9,6 +12,11 @@
     bottom: 0;
     z-index: 10;
     @include respond-to('large') {
+        position: relative;
+        bottom: 35px;
+    }
+    @include respond-to('small') {
+        height: 100%;
         position: relative;
     }
 }
@@ -21,9 +29,14 @@
     @include respond-to('large') {
         justify-content: space-around;
     }
+    @include respond-to('small') {
+        flex-direction: column;
+        height: 100%;
+    }
 }
 
 .second-menu__item {
+    position: relative;
     @include respond-to('large') {
         flex: 100%;
     }
@@ -47,7 +60,16 @@
     transition: all 0.7 linear;
 
     @include respond-to('large') {
-        padding: 2% !important;
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+
+    @include respond-to('small') {
+        padding-top: 22px;
+        padding-bottom: 29px;
+        .icon-check {
+            display: none;
+        }
     }
 }
 
@@ -99,6 +121,17 @@
     list-style: initial;
     transition: all 1s linear;
     max-height: 0;
+    @include respond-to('small') {
+        transition: all 0.5s linear;
+        position: relative;
+        bottom: 0;
+        max-width: 100%;
+        z-index: 22;
+        text-align: center;
+        .icon-check {
+            display: none;
+        }
+    }
     
 }
 .second-menu__item:hover {
@@ -107,9 +140,21 @@
         bottom: 26px;
         z-index: 11;
         box-shadow: 12px 0 15px -4px rgba(0, 1, 3, 0.3), -12px 0 8px -4px rgba(0, 1, 3, 0.3);
+        @include respond-to('small') {
+            padding-bottom: 29px;
+            bottom: 0;
+        }
     }
     .submenu__list {   
         max-height: 1000px;
+        @include respond-to('small') {
+            max-height: 0;
+        }
+    }
+}
+.submenu__list.opened {
+    @include respond-to('small') {
+        max-height: 1000px !important;
     }
 }
 .submenu__item {
@@ -128,10 +173,33 @@
 }
 
 .submenu__link {
+    position: relative;
     font-family: $OpenSans;
     padding: 10px 10px;
     color: $black;
     &:hover {
         color: $blue;
+    }
+}
+
+.second-menu__toggle {
+    @include respond-to('small') {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 40;
+        padding: 0 20px;
+        &:before {
+            content: "\f196";
+            color: $white;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            @include font-size(20px);
+            line-height: 67px;
+        }
+
+        &.opened:before {
+            content: "\f147";
+        }
     }
 }

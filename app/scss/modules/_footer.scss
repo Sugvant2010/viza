@@ -32,6 +32,9 @@ $footer__link_hover: #bbdcfe;
 .footer__title {
     @include font-size(18px);
     color: $white;
+    @include respond-to('large') {
+        padding: 0 30px;
+    }
 }
 
 .column__title {

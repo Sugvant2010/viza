@@ -1,5 +1,6 @@
 .slide__image {
     height: 100%;
+    object-fit: cover;
 }
 
 .slider__title {
@@ -23,4 +24,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    @include respond-to('large') {
+        padding: 0 30px !important;
+    }
 }

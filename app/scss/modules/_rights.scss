@@ -3,16 +3,19 @@
 }
 
 .rights__item {
-    
-display: flex;
+    display: flex;
     align-items: center;
     font-family: $OpenSans;
     @include font-size(18px);
     margin-bottom: 30px;
-    @include gallery(6 of 12);
+    @include span(6 of 12);
     min-height: 72px;
     p {
         width: calc(100% - 69px);
+    }
+    @include respond-to('small') {
+        @include full;
+        padding: 0 15px;
     }
     
 }

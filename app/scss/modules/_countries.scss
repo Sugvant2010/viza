@@ -7,6 +7,8 @@
     position: relative;
     margin: 15px 0;
     text-align: center;
+    
+
 }
 
 .countries__flag {
@@ -33,6 +35,18 @@
 
 .countries__item_asia {
     @include gallery(3 of 12);
+}
+
+.countries__item {
+    @include respond-to('medium') {
+        @include gallery(2.4 of 12);
+    }
+    @include respond-to('small') {
+        @include gallery(3 of 12);
+    }
+    @include respond-to('smallest') {
+        @include gallery(4 of 12);
+    }
 }
 
 .countries__item_poland {

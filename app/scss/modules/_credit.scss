@@ -1,11 +1,18 @@
 .credit__container {
     @include full;
     display: flex;
+    @include respond-to('smallest') {
+        flex-direction: column;
+    }
 }
 
 .credit__form {
     @include span(7 of 12);
     @include gutter(100);
+    @include respond-to('smallest') {
+        @include full;
+        padding: 0 15px;
+    }
 }
 
 .credit__desc {
@@ -14,4 +21,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @include respond-to('smallest') {
+        @include full;
+        padding: 0 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
