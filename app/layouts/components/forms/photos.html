@@ -1,5 +1,5 @@
 <div class="modal modal__photos">    
-    <div class="modal__form_wrapper text_center">        
+    <div class="modal__form_wrapper text_center">
         <h2>Загрузите фоторафии Вашего паспорта к нам на сайт</h2>
         <p class="margin_top30 margin_bottom35 fs18">Необходимо чтобы Вы выслали следующие страницы паспорта:</p>
         <ul class="margin_bottom35 text_left open_sans fs18">
@@ -9,22 +9,14 @@
             <li> - Фото страниц с визами за последние 3 года</li>
         </ul>
         <div class="modal__images">
-            <form action="" class="dropzone">
-                <div class="empty">
-                    <p class="nomargin padding_top55 fs18">Перетащите фото сюда</p>
-                    <p class="nomargin padding_bottom35 fs18">или</p>
-                    <div class="controls">
-                        <a id="photo" class="margin_bottom60 button button_blue image_button fs18" href="#">Выберите фото</a>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="photos">
-                        <input name="file" type="file" multiple>
-                    </div>
-                    <div class="controls">
-                         <a id="add_photo" class="button button_blue image_button fs18" href="#">+ Добавить фото</a>
-                         <a id="submit" class="margin_bottom60 button button_dark-blue image_button fs18" href="#">Отправить</a>
-                    </div>
+            <form action="/sends/to/this/url" class="dropzone">
+                <div class="grid"></div>
+                <input id="fileupload" type="file" name="files[]" style="display:none" multiple>
+                <p class="nomargin padding_top55 fs18 dissapeares">Перетащите фото сюда</p>
+                <p class="nomargin padding_bottom35 fs18 dissapeares">или</p>
+                <div class="controls">
+                    <a id="choose" class="button button_blue image_button fs18" href="#">Выберите фото</a>
+                    <input id="send" type="submit" class="button button_dark-blue image_button fs18 appeares" value="Отправить">                    
                 </div>
             </form>
         </div>
