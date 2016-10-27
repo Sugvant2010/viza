@@ -14,7 +14,7 @@
     "components-font-awesome": "^4.6.3",
     "slider-pro": "^1.2.2",
     "pushy": "^1.0.0",
-    "blueimp-file-upload": "git@github.com:blueimp/jQuery-File-Upload.git#^9.13.0",
+    "blueimp-file-upload": "^9.13.0",
     "jquery.ui.widget": "https://github.com/Sugvant2010/jquery.ui.widget.git"
   }
 }

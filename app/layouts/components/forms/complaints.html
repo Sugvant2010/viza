@@ -1,4 +1,7 @@
 <div class="modal modal__complaints">
+    <a href="#" class="modal__close">
+        <i class="fa fa-close"></i>
+    </a>  
     <div class="modal__form_wrapper text_center">
         <h2>Если Вы недовольны работой нашего агенства или Вам не оказали услугу должным образом, пожалуйста, сообщите нам об этом</h2>
         <p class="margin_top30 margin_bottom30 fs18">Вы можете сообщить нам о Вашей жалобе:</p>
@@ -8,8 +11,9 @@
         <p class="f18">- Либо заполнив форму:</p>
         <form action="POST" class="modal__form span8 flex">
             <div class="row">
-                <input name="name" type="text" class="form__input gallery-6" placeholder="Введите ваше имя">
-                <input name="phone" type="tel" class="form__input gallery-6" placeholder="Введите ваш номер телефона">
+                <input name="name" type="text" class="form__input" placeholder="Введите ваше имя">
+                <input name="phone" type="tel" class="form__input" placeholder="Введите ваш номер телефона">
+                <textarea cols="30" rows="10" class="form__input gallery-6" placeholder="Кратко опишите Вашу жалобу"></textarea>
             </div>
             <button class="button form__button button_danger text_center gallery-12">Отправить жалобу</button>
         </form>

@@ -1,10 +1,18 @@
-<div class="modal modal__visa">    
+<div class="modal modal__visa">
+    <a href="#" class="modal__close">
+        <i class="fa fa-close"></i>
+    </a>    
     <div class="modal__form_wrapper">
         <h2 class="text_center margin_bottom35">Анкета для оформления визы</h2>
         <section class="form_block current">
             <div class="row">
                 <div class="col pl45 f100">
-                    <p class=" block_title nomargin italic fs18">Контактные данные</p>
+                    <p class=" block_title nomargin italic fs18">
+                        Контактные данные
+                        <i class="progress">
+                            <img src="../images/progress.png">
+                        </i>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -29,10 +37,15 @@
                 </div>
             </div>
         </section>
-        <section class="form_block">
+        <section class="form_block current">
             <div class="row">
                 <div class="col pl45 f100">
-                    <p class="block_title nomargin italic fs18">Информация о визе</p>
+                    <p class="block_title nomargin italic fs18">
+                        Информация о визе                        
+                        <i class="progress">
+                            <img src="../images/progress.png">
+                        </i>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -194,6 +207,36 @@
             <div class="row">
                 <div class="col f100 pl45">
                      <a href="#" class="button button_dark-blue button_next fs18 mt25">Продолжить</a>
+                </div>
+            </div>
+        </section>
+        <section class="form_block noborder">            
+            <div class="row">
+                <div class="col pl45 f100">
+                    <p class=" block_title nomargin italic fs18">*Информация об одном из родителей</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mr31 pl45 pr45 f49">
+                    <label class="label fs15">Введите имя Вашего родителя</label>
+                    <input type="text" class="form__input" placeholder="Например, Сергей">
+                    <label class="label fs15">Введите фамилию Вашего родителя</label>
+                    <input type="text" class="form__input" placeholder="Например, Сергеев">
+                </div>
+                <div class="col mr31 pl45 pr45 f49">
+                    <label class="label fs15">Введите гражданство Вашего родителя</label>
+                    <input type="text" class="form__input" placeholder="Например, Беларус">
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col pl45 f100">
+                    <label class="label fs15">Введите домашний адрес и индекс (по прописке) Вашего родителя</label>
+                    <input type="text" class="form__input" placeholder="Например, Минск, ул. Куйбышева 93/1, 220100">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col f100 pl45 button_center">
+                     <a href="#" class="button button_blue button_send fs18 mt25">Отправить</a>
                 </div>
             </div>
         </section>
